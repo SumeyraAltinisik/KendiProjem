@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KendiProjem", "KendiProjem\KendiProjem.csproj", "{B1461C26-52C7-4BB3-85C0-5F284111C5E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KendiWebApp", "KendiWebApp\KendiWebApp.csproj", "{4D57C12B-BD27-458D-AF3F-B0D98B66A1AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1461C26-52C7-4BB3-85C0-5F284111C5E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1461C26-52C7-4BB3-85C0-5F284111C5E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1461C26-52C7-4BB3-85C0-5F284111C5E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1461C26-52C7-4BB3-85C0-5F284111C5E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D57C12B-BD27-458D-AF3F-B0D98B66A1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D57C12B-BD27-458D-AF3F-B0D98B66A1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D57C12B-BD27-458D-AF3F-B0D98B66A1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D57C12B-BD27-458D-AF3F-B0D98B66A1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {936A48F9-E186-48D2-9142-F3CC547BC3D4}
+	EndGlobalSection
+EndGlobal

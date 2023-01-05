@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Album>
+@{
+    ViewData["Title"] = "AlbumsByArtist";
+}
+
+<h2>AlbumsByArtist</h2>
+
+<table style="width:50%">
+    <thead>
+        <tr>
+            <th>AlbumId</th>
+            <th>Title</th>      
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Album e in Model)
+        {
+            <tr>
+                <td>@e.AlbumId</td>   
+                <td>@e.Title</td>  
+                <td><a asp-action="Update" asp-route-empname="@e.Title">Update</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
