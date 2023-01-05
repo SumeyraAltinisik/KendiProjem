@@ -14,7 +14,7 @@ public partial class ChinookContext : DbContext
         : base(options)
     {
     }
-
+    public virtual DbSet<Hit> Hits { get; set; }
     public virtual DbSet<Album> Albums { get; set; }
 
     public virtual DbSet<Artist> Artists { get; set; }
@@ -34,6 +34,7 @@ public partial class ChinookContext : DbContext
     public virtual DbSet<Playlist> Playlists { get; set; }
 
     public virtual DbSet<Track> Tracks { get; set; }
+    
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
@@ -41,6 +42,12 @@ public partial class ChinookContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Hit>(entity =>
+        {
+            entity.ToTable("TabloBirlesim");
+
+        });
+
         modelBuilder.Entity<Album>(entity =>
         {
             entity.ToTable("albums");
