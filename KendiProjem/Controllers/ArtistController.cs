@@ -1,5 +1,7 @@
 ﻿using KendiProjem.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace KendiProjem.Controllers
 {
@@ -8,9 +10,10 @@ namespace KendiProjem.Controllers
         public IActionResult Index()
         {
             ChinookContext cnt = new ChinookContext();
-            return View(cnt.Artists.ToList());
+            var result = cnt.Artists.ToList();
+            return View(result);
         }
-
+       
         public IActionResult AlbumsByArtist(int id)
         {
             ChinookContext cnt = new ChinookContext();

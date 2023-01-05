@@ -1,7 +1,6 @@
 ﻿@model IEnumerable<Album> 
 @{
     ViewData["Title"] = "AlbumsByArtist";
-
 }
 <h2>AlbumsByArtist</h2>
 
@@ -10,6 +9,7 @@
         <tr>
             <th>AlbumId</th>
             <th>ArtistId</th>           
+            <th>Artist Name</th>           
             <th>Title</th>      
             <th></th>
         </tr>
@@ -19,7 +19,8 @@
         {
             <tr>
                 <td>@e.AlbumId</td>     
-                <td>@e.ArtistId</td>                                  
+                <td>@e.Artist.ArtistId</td>
+                <td>@e.Artist.Name</td>
                 <td>@e.Title</td>  
                 <td><a asp-action="Update" asp-route-empname="@e.Title">Update</a></td>
             </tr>
