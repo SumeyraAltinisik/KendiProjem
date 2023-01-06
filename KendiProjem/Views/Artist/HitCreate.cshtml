@@ -1,0 +1,14 @@
+﻿@model Hit
+@{
+    ViewData["Title"] = "HitCreate";
+}
+<a asp-action="HitIndex">View All Hits</a>
+<h2>HitCreate</h2>
+<form method="post">
+    <p>
+        <label asp-for="Name">Artist.ArtistId:</label>
+        <label asp-for="Title">Album.AlbumId:</label>
+        <input asp-for="Name" />
+    </p>
+    <p><button type="submit">Submit</button></p>
+</form>

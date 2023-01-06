@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Hit>
+@{
+    ViewData["Title"] = "HitIndex";
+}
+<table style="width:50%">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Title</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+         @foreach (Hit a in Model)
+        {
+            <tr>
+                <td>@a.Id</td>
+                <td>@a.Name</td>
+                <td>@a.Title</td>
+                <td>
+                    <a asp-controller="Artist"
+               asp-action="HitIndex"
+               asp-route-level="Name"
+               asp-route-type="Title"
+               asp-route-id="@a.Id">Hit</a>
+               
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

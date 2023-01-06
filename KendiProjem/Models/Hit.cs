@@ -6,5 +6,7 @@
         public string Name { get; set; }
         public string Title { get; set; }
 
+        public virtual ICollection<Hit> Hits { get; } = new List<Hit>();
+
     }
 }
