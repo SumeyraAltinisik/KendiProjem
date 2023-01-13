@@ -16,3 +16,10 @@ public partial class Artist
     public int stars { get; set; }
 }
 
+public abstract class BaseEntity : Microsoft.WindowsAzure.MediaServices.Client.IMediaContextContainer
+{
+    public virtual ICollection<Artist> Artists { get; set; }
+    public abstract string Name { get; set; }
+    public virtual ICollection<Album> Albums { get; }
+
+}

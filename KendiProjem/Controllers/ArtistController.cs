@@ -35,5 +35,6 @@ namespace KendiProjem.Controllers
             context.SaveChanges();
             return View("Thanks", artist);
         }
+
     }
 }
